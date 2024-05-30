@@ -19,20 +19,15 @@
     
     <div class="container  form-container">
         <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-            <form class="p-4 border rounded bg-light" method="get">
+            <form class="p-4 border rounded bg-light" method="get" action="crearExamenes.html">
                 <div class="form-group m-2">
                     <label for="materia"><h3>Materia</h3></label>
-                    <input type="text" id="materia" class="form-control" placeholder="Ingresa el nombre de la materia">
+                    <input type="text" id="materia" name="materia" class="form-control" placeholder="Ingresa el nombre de la materia">
                 </div>
                 
                 <div class="form-group m-2">
                     <label for="opciones"><h3>Opciones</h3></label>
-                    <select id="opciones" class="form-control">
-                        <option value="" disabled selected>Seleccione un grupo</option>
-                        <option value="opcion1">3E</option>
-                        <option value="opcion2">3F</option>
-                        <option value="opcion3">3C</option>
-                    </select>
+                    <input type="text" id="gradoGrupo" name="gradoGrupo" class="form-control" placeholder="Infresa el grupo" maxlength="7">
                 </div>
                 
                 <div class="form-group m-2">
@@ -42,16 +37,16 @@
                 
                 <div class="form-group m-2">
                     <label for="preguntas"><h3>Numero de preguntas</h3></label>
-                    <input class="form-control" type="number" id="nPreguntas" placeholder="Ingrese el número de preguntas">
+                    <input class="form-control" type="number" id="preguntas" name="preguntas" placeholder="Ingrese el número de preguntas">
                 </div>
                 
                 <div class="text-center m-2">
                     <input type="submit" class="btn btn-primary" value="Crear">
                 </div>
+                
             </form>
         </div>
     </div>
 
-    <!-- No necesitas cargar jQuery y Bootstrap 4 JavaScript si no los estás utilizando -->
 </body>
 </html>
