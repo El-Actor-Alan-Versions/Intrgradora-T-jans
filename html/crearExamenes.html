@@ -9,7 +9,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="container text-center">
+    <div class="container text-center bg-primary">
         <div class="row">
             <div class="col">
                 <h2 class="h2">Materia: <span id="Materia" class="h3"></span></h2>
@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center bg-primary">
         <div class="row">
             <div class="col">
                 <h2 class="h2">Grado y grupo: <span id="gradoGrupo" class="h3"></span></h2>
@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center bg-primary">
         <div class="row">
             <div class="col">
                 <h2 class="h2">Fecha de aplicación: <span id="Fecha" class="h3"></span></h2>
@@ -33,23 +33,34 @@
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center bg-primary">
         <div class="row">
             <div class="col">
-                <h2 class="h2">Número de preguntas: <span id="nPreguntas" class="h3"></span></h2>
+                <h2 class="h2">Número de preguntas: <span id="Preguntas" class="h3"></span></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center bg-light mt-4">
+        <div class="row">
+            <div class="col">
+                <form id="formularioPreguntas" class="text-left">
+                    <!-- Aquí se generarán las preguntas -->
+                </form>
             </div>
         </div>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            getParameter = (key) => {
-                const address = window.location.search; //url de la ventana actual
-                //Objeto de tipo URLSearchParams
+            const getParameter = (key) => {
+                const address = window.location.search; // URL de la ventana actual
+                // Objeto de tipo URLSearchParams
                 const parameterList = new URLSearchParams(address);
                 // Regresa el valor del parámetro “key”
                 return parameterList.get(key);
             }
+
             const Materia = document.getElementById("Materia");
             Materia.innerText = getParameter("materia") || 'No especificado';
     
@@ -59,11 +70,43 @@
             const fecha = document.getElementById("Fecha");
             fecha.innerText = getParameter("fechaAplicacion") || 'No especificado';
     
-            const nPreguntas = document.getElementById("nuPreguntas");
-            let nPreguntasValue = getParameter("preguntas");
-            nPreguntas.innerText = nPreguntasValue !== null ? nPreguntasValue.toString() : 'No especificado';
+            const numeroPreguntas = getParameter("numero") || 'No especificado';
+            const preguntas = document.getElementById("Preguntas");
+            preguntas.innerText = numeroPreguntas;
 
-    
+            // Generar el formulario basado en el número de preguntas
+            const formulario = document.getElementById("formularioPreguntas");
+            const numPreguntas = parseInt(numeroPreguntas);
+
+            if (!isNaN(numPreguntas) && numPreguntas > 0) {
+                for (let i = 1; i <= numPreguntas; i++) {
+                    const div = document.createElement("div");
+                    div.classList.add("form-group", "m-3");
+                    
+                    const label = document.createElement("label");
+                    label.setAttribute("for", "pregunta" + i);
+                    label.textContent = "Pregunta " + i;
+                    
+                    const input = document.createElement("input");
+                    input.type = "text";
+                    input.classList.add("form-control");
+                    input.id = "pregunta" + i;
+                    input.name = "pregunta" + i;
+                    input.required = true;
+                    
+                    div.appendChild(label);
+                    div.appendChild(input);
+                    formulario.appendChild(div);
+                }
+                // Agregar botón de enviar
+                const submitButton = document.createElement("button");
+                submitButton.type = "submit";
+                submitButton.classList.add("btn", "btn-primary");
+                submitButton.textContent = "Guardar";
+                formulario.appendChild(submitButton);
+            } else {
+                formulario.innerHTML = "<p>Número de preguntas no especificado o inválido.</p>";
+            }
         });
     </script>
 </body>
