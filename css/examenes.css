@@ -1,10 +1,38 @@
 body, html {
     height: 100%;
-    background-color: aquamarine;
+    background-color: #61d487;
 }
+/*
+#61d487
+#7bdfa0
+#96eab9
+#b0f4d1
+#caffea
+*/
 .form-container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.bg-fuerte{
+    background-color: #61d487;
+}
+
+.bg-fBaja{
+    background-color:#7bdfa0 ;
+}
+
+.bg-media{
+    background-color: #96eab9;
+}
+
+.bg-bajo{
+    background-color: #b0f4d1;
+}
+
+.bg-mBajo{
+    background-color: #caffea;
+}
+
