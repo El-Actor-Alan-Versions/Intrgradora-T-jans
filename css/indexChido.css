@@ -46,5 +46,24 @@
     width: 50%; /* Anchura completa */
 }
 
+/*Fuente*/
+@font-face {
+    font-family: 'Reddit mono';
+    src: url(../fonts/Reddit_Mono/static/RedditMono-Black.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+h1{
+    font-family: 'Reddit mono', sans-serif;
+    font-size: x-large;
+}
+a{
+    font-family: 'Reddit mono';
+    font-size: xx-small;
+
+}
+
+
 
 
