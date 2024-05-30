@@ -1,14 +1,10 @@
+/* Cambia los colores del form y navbar por el color del body */
 body, html {
     height: 100%;
-    background-color: #61d487;
+    background-color: #fafcfa;
 }
-/*
-#61d487
-#7bdfa0
-#96eab9
-#b0f4d1
-#caffea
-*/
+
+/* Estilos para el formulario */
 .form-container {
     height: 100%;
     display: flex;
@@ -16,23 +12,24 @@ body, html {
     align-items: center;
 }
 
-.bg-fuerte{
+/* Clases para los diferentes fondos */
+.bg-fuerte {
     background-color: #61d487;
 }
 
-.bg-fBaja{
-    background-color:#7bdfa0 ;
+.bg-fBaja {
+    background-color: #7bdfa0;
 }
 
-.bg-media{
+.bg-media {
     background-color: #96eab9;
 }
 
-.bg-bajo{
+.bg-bajo {
     background-color: #b0f4d1;
 }
 
-.bg-mBajo{
+.bg-mBajo {
     background-color: #caffea;
 }
 
