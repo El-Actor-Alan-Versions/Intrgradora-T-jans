@@ -16,7 +16,7 @@
 
 /* Estilos para el botón */
 .btn {
-    background-color: #0aa779; /* Color de fondo */
+    background-color: #19c1c7 ; /* Color de fondo */
     color: #fff; /* Color del texto */
     border: none; /* Sin borde */
     padding: 10px 20px; /* Espaciado interno */
@@ -28,7 +28,7 @@
 }
 
 .btn:hover {
-    background-color: #6ba392; /* Color de fondo al pasar el ratón */
+    background-color: #374fd8; /* Color de fondo al pasar el ratón */
     transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
 }
 
