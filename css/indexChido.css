@@ -3,14 +3,14 @@
 
 /* Custom styles for the navbar */
 .custom-navbar {
-    background-color: #0aa779; /* Light green background */
+    background-color: #343a40; /* Color de contraste oscuro para la navbar */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .custom-navbar-brand {
     font-family: 'Roboto', sans-serif; /* Custom font */
     font-size: 2rem; /* Font size */
-    color: #000; /* Text color */
+    color: #ffffff !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for effect */
 }
 
@@ -65,5 +65,19 @@ a{
 }
 
 
-
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #f0f0f0; /* Gris minimalista */
+}
+.form-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-container {
+    width: 100%;
+    max-width: 800px;
+}
 
