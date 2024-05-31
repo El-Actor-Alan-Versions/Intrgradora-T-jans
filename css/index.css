@@ -17,3 +17,104 @@ body{
   font-size: 24px;
   /* transition: 0.3s color; */
 }
+.container{
+  position: fixed;
+  top: 100px;
+  bottom: 25px;
+  left: 80px;
+}
+
+/*Boton de creacion de examen*/
+.icon-button {
+  display: inline-block;
+  border-radius: 90%;
+  position: fixed; /* Hace que el botón sea fijo en la ventana del navegador */
+  padding: 25px;
+  text-align: center;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #007BFF;
+  font-size: 20px; /* Ajusta el tamaño del icono */
+  transition: background-color 0.5s, color 0.4s; /* Añade una transición suave */
+}
+
+
+.icon-button i {
+  position: absolute; /* Posiciona el icono de forma absoluta dentro del botón */
+  top: 50%; /* Lo coloca en el centro verticalmente */
+  left: 50%; /* Lo coloca en el centro horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el icono exactamente */
+}
+
+.icon-button:hover {
+  background-color: #6b6b6b;
+  color: #FFFFFF; /* Cambia el color del icono al pasar el mouse */
+}
+
+.icon-button:active {
+  background-color: #0056b3;
+  color: #FFFFFF; /* Cambia el color del icono al hacer clic */
+}
+
+
+/*Boton de consulta grupo*/
+.consultar-button {
+  display: inline-block;
+  border-radius: 90%;
+  position: fixed; /* Hace que el botón sea fijo en la ventana del navegador */
+  padding: 25px;
+  text-align: center;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #007BFF;
+  font-size: 20px; /* Ajusta el tamaño del icono */
+  transition: background-color 0.4s, color 0.3s; /* Añade una transición suave */
+}
+
+
+.consultar-button i {
+  position: absolute; /* Posiciona el icono de forma absoluta dentro del botón */
+  top: 50%; /* Lo coloca en el centro verticalmente */
+  left: 50%; /* Lo coloca en el centro horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el icono exactamente */
+}
+
+.consultar-button:hover {
+  background-color: #6b6b6b;
+  color: #FFFFFF; /* Cambia el color del icono al pasar el mouse */
+}
+
+.consultar-button:active {
+  background-color: #0056b3;
+  color: #FFFFFF; /* Cambia el color del icono al hacer clic */
+}
+
+/*Boton de gestionar examen*/
+
+.gestionar-button {
+  display: inline-block;
+  border-radius: 90%;
+  position: fixed; /* Hace que el botón sea fijo en la ventana del navegador */
+  padding: 25px;
+  text-align: center;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #007BFF;
+  font-size: 20px; /* Ajusta el tamaño del icono */
+  transition: background-color 0.4s, color 0.3s; /* Añade una transición suave */
+}
+
+
+.gestionar-button i {
+  position: absolute; /* Posiciona el icono de forma absoluta dentro del botón */
+  top: 50%; /* Lo coloca en el centro verticalmente */
+  left: 50%; /* Lo coloca en el centro horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el icono exactamente */
+}
+
+.gestionar-button:hover {
+  background-color: #6b6b6b;
+  color: #FFFFFF; /* Cambia el color del icono al pasar el mouse */
+}
+
+.gestionar-button:active {
+  background-color: #0056b3;
+  color: #FFFFFF; /* Cambia el color del icono al hacer clic */
+}
