@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/login.css">
+    <link type=""
 </head>
 <body>
     <!--unu-->
@@ -24,7 +25,7 @@
     </nav> -->
     <!--Contenido principal-->
     <div class="form-center">
-        <form class="form-container" method="post" action="indexDefinitivo.html">
+        <form class="form-container" method="post" action="js/index.js">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
@@ -39,12 +40,12 @@
                                 <br>
                                 <div class="form-control-sm">
                                     <div class="form-group form-control-sm">
-                                        <input class="form-control rounded-pill text-muted" placeholder="Matrícula" type="text" required>
+                                        <input class="form-control rounded-pill text-muted" id="matricula" placeholder="Matrícula" type="text" required>
                                     </div>
                                 </div>
                                 <div class="form-control-sm">
                                     <div class="form-group form-control-sm">
-                                        <input class="form-control rounded-pill text-muted" placeholder="Contraseña" type="password" required>
+                                        <input class="form-control rounded-pill text-muted" id="contrasena" placeholder="Contraseña" type="password" required>
                                     </div>
                                 </div>
                                 <div class="form-control-sm">
@@ -54,7 +55,8 @@
                                 </div>
                                 <br>
                                 <div class="d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-block rounded-pill">Iniciar Sesión</button>
+                                    <button type="button" onclick="location.href='indexDefinitivo.html'"  class="btn btn-block rounded-pill">Iniciar Sesión</button>
+                                    
                                 </div>
                             </div>
                         </div>
