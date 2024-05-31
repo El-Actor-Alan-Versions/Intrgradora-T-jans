@@ -22,23 +22,29 @@
         <div class="col-12 col-sm-8 col-md-6 col-lg-4">
             <form class="p-4 border rounded bg-bajo" method="get" action="crearExamenes.html">
                 <div class="form-group m-2">
-                    <label a for="materia "><h3>Materia</h3></label>
-                    <input type="text" id="materia" name="materia" class="form-control" placeholder="Ingresa el nombre de la materia">
+                    <label for="materia"><h3>Materia</h3></label>
+                    <select id="materia" name="materia" class="form-control">
+                        <option value="">Selecciona la materia</option>
+                        <option value="Matemáticas">Matemáticas</option>
+                        <option value="Formacion II">Formacion II</option>
+                        <option value="Aplicaiones Web">Aplicaiones Web</option>
+                        
+                    </select>
                 </div>
-                
                 <div class="form-group m-2">
-                    <label for="opciones"><h3>grado-Grupo y Carrera</h3></label>
-                    <input type="text" id="gradoGrupo" name="gradoGrupo" class="form-control" placeholder="Infresa el grupo" maxlength="7">
+                    <label for="gradoGrupo"><h3>Grado-Grupo y Carrera</h3></label>
+                    <select id="gradoGrupo" name="gradoGrupo" class="form-control">
+                        <option value="">Selecciona el grado y grupo</option>
+                        <option value="3E">3E</option>
+                        <option value="2B">2B</option>
+                        <option value="3C">3C</option>
+                        
+                    </select>
                 </div>
                 
                 <div class="form-group m-2">
                     <label for="fecha"><h3>Fecha</h3></label>
                     <input class="form-control" type="date" id="fechaAplicacion" name="fechaAplicacion">
-                </div>
-                
-                <div class="form-group m-2">
-                    <label for="preguntas"><h3>Numero de preguntas</h3></label>
-                    <input class="form-control" type="number" id="numero" name="numero" placeholder="Ingrese el número de preguntas">
                 </div>
                 
                 <div class="text-center m-2">
