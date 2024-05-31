@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/examenes.css">
 </head>
 <body>
-    <nav class="navbar p-3 custom-navbar bg-media">
+    <!-- <nav class="navbar p-3 custom-navbar bg-media">
         <div class="col">
             <a class="navbar-brand text-black" href="#">PLATAFORMA DE EXAMENES</a>
         </div>
@@ -17,43 +17,49 @@
             <img src="../img/Logo.png" width="100px" alt="logo">
         </div>
     </nav>
-    
-    <div class="container  form-container">
-        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-            <form class="p-4 border rounded bg-bajo" method="get" action="crearExamenes.html">
-                <div class="form-group m-2">
-                    <label for="materia"><h3>Materia</h3></label>
-                    <select id="materia" name="materia" class="form-control">
-                        <option value="">Selecciona la materia</option>
-                        <option value="Matemáticas">Matemáticas</option>
-                        <option value="Formacion II">Formacion II</option>
-                        <option value="Aplicaiones Web">Aplicaiones Web</option>
-                        
-                    </select>
+    -->
+    <nav class="navbar bg-body-tertiary fixe-top">
+        <div class="container-fluid">   
+            <a class="navbar-brand">Logo</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div id="Formulario" class="p-4 border rounded bg-bajo">
+                    <form method="get" action="crearExamenes.html">
+                        <div class="form-group">
+                            <label for="materia"><h3>Materia</h3></label>
+                            <select id="materia" name="materia" class="form-control">
+                                <option value="">Selecciona la materia</option>
+                                <option value="Matemáticas">Matemáticas</option>
+                                <option value="Formacion II">Formacion II</option>
+                                <option value="Aplicaiones Web">Aplicaiones Web</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="gradoGrupo"><h3>Grado-Grupo y Carrera</h3></label>
+                            <select id="gradoGrupo" name="gradoGrupo" class="form-control">
+                                <option value="">Selecciona el grado y grupo</option>
+                                <option value="3E">3E</option>
+                                <option value="2B">2B</option>
+                                <option value="3C">3C</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="fecha"><h3>Fecha</h3></label>
+                            <input class="form-control" type="date" id="fechaAplicacion" name="fechaAplicacion">
+                        </div>
+        
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-primary" value="Crear">
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group m-2">
-                    <label for="gradoGrupo"><h3>Grado-Grupo y Carrera</h3></label>
-                    <select id="gradoGrupo" name="gradoGrupo" class="form-control">
-                        <option value="">Selecciona el grado y grupo</option>
-                        <option value="3E">3E</option>
-                        <option value="2B">2B</option>
-                        <option value="3C">3C</option>
-                        
-                    </select>
-                </div>
-                
-                <div class="form-group m-2">
-                    <label for="fecha"><h3>Fecha</h3></label>
-                    <input class="form-control" type="date" id="fechaAplicacion" name="fechaAplicacion">
-                </div>
-                
-                <div class="text-center m-2">
-                    <input type="submit" class="btn btn-primary" value="Crear">
-                </div>
-                
-            </form>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

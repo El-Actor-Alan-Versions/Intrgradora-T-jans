@@ -1,7 +1,7 @@
 /* Cambia los colores del form y navbar por el color del body */
 body, html {
     height: 100%;
-    background-color: #fafcfa;
+    background-color: #cacaca;
 }
 
 /* Estilos para el formulario */
@@ -12,8 +12,25 @@ body, html {
     align-items: center;
 }
 
+#Formulario {
+    background-color: white;
+    width: 400px; /* Ajusta el ancho según sea necesario */
+    padding: 30px; /* Ajusta el relleno interno según sea necesario */
+    border-radius: 10px; /* Ajusta el radio de borde según sea necesario */
+    margin: 50px auto; /* Margen automático vertical y horizontal */
+}
+  /* Cambiar el color de la barra de navegación */
+.navbar{
+    background-color: #eaeaea;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    
+}
+
 /* Clases para los diferentes fondos */
-.bg-fuerte {
+/* .bg-fuerte {
     background-color: #61d487;
 }
 
@@ -31,5 +48,9 @@ body, html {
 
 .bg-mBajo {
     background-color: #caffea;
-}
+} */
+
+
+
+
 
