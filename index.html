@@ -1,43 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Exámenes</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand">Logo</a>
-        </div>
-    </nav>
-    <div class="container text-center mt-5">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" >Formularios</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Crear Examen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gestionar Calificaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Modificar Perfil</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="options-section py-5">
+    <div class="container">
         <div class="row">
-            <div class="col-3 text-center">
-                <a href="html/registroExamenes.html" class="icon-button">
-                    <img src="img/añadir.png" width="68" alt="crear-examen">
-                </a>
+            <div class="col-md-4 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-plus-circle fa-4x mb-3"></i>
+                        <h5 class="card-title">Crear Examen</h5>
+                        <p class="card-text">Diseña y publica nuevos exámenes fácilmente.</p>
+                        <a href="#" class="btn btn-primary">Crear</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-3 text-center">
-                <a href="" class="consultar-button">
-                    <img src="img/consultar.png" width="68" alt="consultar-grupo">
-                </a>
+            <div class="col-md-4 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-chart-bar fa-4x mb-3"></i>
+                        <h5 class="card-title">Gestionar Calificaciones</h5>
+                        <p class="card-text">Administra y revisa las calificaciones de los estudiantes.</p>
+                        <a href="#" class="btn btn-primary">Gestionar</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-3 text-center">
-                <a href="" class="gestionar-button">
-                    <img src="img/gestionar.png" width="68" alt="gestionar-examen">
-                </a>
-            </div>
-            <div class="col-3 text-center">
-                <a href="" class="modificar-button">
-                    <img src="img/perfil.png" width="68" alt="modificar-perfil">
-                </a>
+            <div class="col-md-4 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-user-edit fa-4x mb-3"></i>
+                        <h5 class="card-title">Modificar Perfil</h5>
+                        <p class="card-text">Actualiza tu información personal y ajustes de cuenta.</p>
+                        <a href="#" class="btn btn-primary">Modificar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src='main.js'></script>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-4">
+    <p>&copy; 2024 ExamenPro. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="js/scripts.js"></script>
 </body>
 </html>
