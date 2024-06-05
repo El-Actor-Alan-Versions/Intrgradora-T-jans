@@ -34,10 +34,6 @@ function addQuestion() {
     questionDiv.appendChild(answersContainer);
 
     questionsContainer.appendChild(questionDiv);
-
-    // Almacenar la pregunta en localStorage
-    saveQuestionToLocalStorage(questionIndex, input.value);
-    input.addEventListener('input', () => saveQuestionToLocalStorage(questionIndex, input.value));
 }
 
 function addAnswer(questionDiv, questionIndex) {
@@ -61,22 +57,4 @@ function addAnswer(questionDiv, questionIndex) {
     answerDiv.appendChild(input);
 
     answersContainer.appendChild(answerDiv);
-
-    // Almacenar la respuesta en localStorage
-    saveAnswerToLocalStorage(questionIndex, answerIndex, input.value);
-    input.addEventListener('input', () => saveAnswerToLocalStorage(questionIndex, answerIndex, input.value));
-}
-
-function saveQuestionToLocalStorage(questionIndex, question) {
-    let data = JSON.parse(localStorage.getItem('questions')) || [];
-    data[questionIndex] = data[questionIndex] || { question: '', answers: [] };
-    data[questionIndex].question = question;
-    localStorage.setItem('questions', JSON.stringify(data));
-}
-
-function saveAnswerToLocalStorage(questionIndex, answerIndex, answer) {
-    let data = JSON.parse(localStorage.getItem('questions')) || [];
-    data[questionIndex] = data[questionIndex] || { question: '', answers: [] };
-    data[questionIndex].answers[answerIndex] = answer;
-    localStorage.setItem('questions', JSON.stringify(data));
 }

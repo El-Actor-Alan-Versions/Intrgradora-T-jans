@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const questionsDisplay = document.getElementById('questionsDisplay');
-    const data = JSON.parse(localStorage.getItem('questions')) || [];
+    const urlParams = new URLSearchParams(window.location.search);
+    const questionData = JSON.parse(urlParams.get('data')) || [];
 
-    data.forEach((item, index) => {
+    questionData.forEach((item, index) => {
         const questionDiv = document.createElement('div');
         questionDiv.classList.add('question');
 
@@ -24,15 +25,3 @@ document.addEventListener('DOMContentLoaded', function () {
         questionsDisplay.appendChild(questionDiv);
     });
 });
-document.addEventListener('DOMContentLoaded', function () {
-    const questionsDisplay = document.getElementById('questionsDisplay');
-    const backButton = document.getElementById('regreso');
-
-    backButton.addEventListener('click', function() {
-        window.history.back(); // Redirigir al usuario a la página anterior
-    });
-
-    // Resto del código para mostrar preguntas y respuestas
-    // ...
-});
-
