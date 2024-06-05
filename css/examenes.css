@@ -12,6 +12,11 @@ body, html {
     align-items: center;
 }
 
+nav{
+    justify-content: end;
+}
+
+
 #Formulario {
     background-color: white;
     width: 400px; /* Ajusta el ancho según sea necesario */
@@ -20,13 +25,8 @@ body, html {
     margin: 50px auto; /* Margen automático vertical y horizontal */
 }
   /* Cambiar el color de la barra de navegación */
-.navbar{
-    background-color: #eaeaea;
-    height: 80px;
-    margin: 20px;
-    border-radius: 16px;
-    padding: 0.5rem;
-    
+.options-section .card {
+    margin-bottom: 30px;
 }
 
 .btn {
