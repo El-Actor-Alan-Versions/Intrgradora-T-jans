@@ -9,4 +9,3 @@
                 document.getElementById('email').value = params.get('email');
             }
         });
-    
