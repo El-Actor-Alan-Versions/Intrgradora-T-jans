@@ -1,7 +1,7 @@
 /* Cambia los colores del form y navbar por el color del body */
 body, html {
     height: 100%;
-    background-color: #cacaca;
+    background-color: #fff;
 }
 
 /* Estilos para el formulario */
